@@ -2,12 +2,6 @@
 
 Package for Angular app, with all essential components for ratings, like stars and inputs.
 
-## Examples
-
-![Example Components](assets/CONTRIBUTING.star-inputs-example.png)
-
-Visit exaples demo page and ty it yourslef [Hosted Demo Examples](https://google.com).
-
 ### Dev Quick Start
 
        <ngx-rating-input
