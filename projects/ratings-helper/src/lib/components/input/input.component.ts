@@ -27,6 +27,9 @@ export class InputComponent implements OnInit {
   @Input() max!: number;
   @Input() size: number = 28;
   @Input() formControl: FormControl | null = null;
+  @Input() colorActive: string = "yellow";
+  @Input() colorInactive: string = "gray";
+  @Input() borderColor: string = "black";
 
   @Output() valueChanges: EventEmitter<number> = new EventEmitter();
 
