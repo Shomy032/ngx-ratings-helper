@@ -1,4 +1,3 @@
-
 # ngx-ratings-helper
 
 Package for Angular app, with all essential components for ratings, like stars and inputs.

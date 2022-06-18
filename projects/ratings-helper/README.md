@@ -2,37 +2,34 @@
 
 Package for Angular app, with all essential components for ratings, like stars and inputs.
 
-## Developer Quick Start
+## Examples
 
-after cloning repo, first install all needed dependencies :
+![Example Components](assets/CONTRIBUTING.star-inputs-example.png)
 
-    npm i
+Visit exaples demo page and ty it yourslef [Hosted Demo Examples](https://google.com).
 
-then build library in watch mode ( building every time when detect changes )
+### Dev Quick Start
 
-this is needed to apply new changes to dev envirement :
+       <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [disabled]="true" 
+        customClass="my-class"
+        [formControl]="ratingControl">
+        </ngx-rating-input>
 
-    npm run build-libw
+#### Add custom colors : 
 
-after that is finished in NEW terminal serve dev envirement for testing
+     <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
 
-    npm run start
+        colorInactive="green"
+        colorActive="orange"
 
-now you are redy to go :)
-
-## Code scaffolding
-
-Run `npm run clib -- --name=${YOUR_NAME_HERE}` to generate a new component. 
-
-## Build
-
-Run `npm run build-lib` to build library code. 
-
-## Running unit tests and Liting
-
-Run `npm run lint-lib` to lint library code, and check for potential errors. 
-
-Run `npm run test-lib` to run all library tests. 
-
-Please do this step before you start working and after you done, becuse this is needed to pass in orders to merge new changes in project.
-
+        [disabled]="true" 
+        customClass="my-class"
+        [formControl]="ratingControl">
+        </ngx-rating-input>

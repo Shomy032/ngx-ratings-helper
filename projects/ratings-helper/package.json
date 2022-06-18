@@ -1,5 +1,5 @@
 {
-  "name": "ratings-helper",
+  "name": "ngx-ratings-helper",
   "version": "0.0.1",
   "keywords" : ["angular", "material", "rating", "star", "rating-stars", "rating-input", "rating-form", "ratings-star", "ratings-input", "ratings-form"],
   "description": "Package for Angular app, with all essential components for ratings, like stars and inputs.",
