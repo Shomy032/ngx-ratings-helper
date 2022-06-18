@@ -1,0 +1,159 @@
+<div class="page">
+
+    <div class="section">
+       
+        <h1 class="app-title">Stars input :</h1>
+        
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [disabled]="false" 
+        customClass="my-class"
+        [formControl]="ratingControl1"
+        (valueChanges)="handleValueChanges($event)">
+        </ngx-rating-input>
+        
+        
+        
+        <h1 class="app-title">Stars input disabled:</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [disabled]="true" 
+        customClass="my-class"
+        [formControl]="ratingControl3">
+        </ngx-rating-input>
+        
+        <h1 class="app-title">Stars input value binding ( directly ):</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [value]="value1"
+        [disabled]="false" 
+        customClass="my-class"
+        >
+        </ngx-rating-input>
+        <span style="margin: 0 0 0 1rem;">change value:</span>
+        <input style="margin: 0 0 0 1rem;" 
+        [max]="5"
+        [min]="0"
+        type="number" 
+        name="value1"
+        ngDefaultControl
+        [(ngModel)]="value1">
+        
+        
+        <h1 class="app-title">Stars input value binding ( form control ):</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [disabled]="false" 
+        customClass="my-class"
+        [formControl]="ratingControl4">
+        </ngx-rating-input>
+        
+        <span style="margin: 0 0 0 1rem;">change value:</span>
+        <input style="margin: 0 0 0 1rem;" 
+        [max]="5"
+        [min]="0"
+        type="number" 
+        name="ratingControl4"
+        ngDefaultControl
+        [formControl]="ratingControl4">
+        
+        <h1 class="app-title">Stars input resizable:</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [size]="size1"
+        [disabled]="false"
+        [value]="0"
+        customClass="my-class">
+        </ngx-rating-input>
+        
+        <span style="margin: 0 0 0 1rem;">change size:</span>
+        
+        
+        <input style="margin: 0 0 0 1rem;" 
+        type="number" 
+        name="size1"
+        ngDefaultControl
+        [(ngModel)]="size1">
+    </div>
+
+    <div class="section">
+        <h1 class="app-title">Stars input disabled (full):</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [disabled]="true" 
+        customClass="my-class"
+        [formControl]="ratingControl2">
+        </ngx-rating-input>
+        
+        
+        <h1 class="app-title">Stars input disabled (empty):</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [disabled]="true"
+        [value]="0"
+        customClass="my-class">
+        </ngx-rating-input>
+        
+        <h1 class="app-title">Stars input large:</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [disabled]="false"
+        [size]="45"
+        [value]="0"
+        customClass="my-class">
+        </ngx-rating-input>
+         
+        <h1 class="app-title">Stars input small:</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [size]="15"
+        [disabled]="false"
+        [value]="0"
+        customClass="my-class">
+        </ngx-rating-input>
+
+        <h1 class="app-title">Stars input (empty default) :</h1>
+        
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [value]="0"
+        [disabled]="false" 
+        customClass="my-class"
+        (valueChanges)="handleValueChanges($event)">
+        </ngx-rating-input>
+        
+        <h1 class="app-title">Stars input (full default):</h1>
+        
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [value]="5"
+        [disabled]="false" 
+        customClass="my-class"
+        (valueChanges)="handleValueChanges($event)">
+        </ngx-rating-input>
+    </div>
+
+</div>
+

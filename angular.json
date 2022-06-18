@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -99,6 +100,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -149,7 +151,7 @@
       "projectType": "library",
       "root": "projects/ratings-helper",
       "sourceRoot": "projects/ratings-helper/src",
-      "prefix": "lib",
+      "prefix": "ngx-rating",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

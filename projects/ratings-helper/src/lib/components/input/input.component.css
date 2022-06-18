@@ -1,0 +1,11 @@
+.stars-input{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+}
+
+.stars-input > * {
+ margin: 0 0.125rem;
+}
