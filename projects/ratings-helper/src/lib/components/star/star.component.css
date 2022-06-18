@@ -1,0 +1,5 @@
+.single-star{
+    background-clip: text !important;
+-webkit-background-clip: text !important;
+-webkit-text-fill-color: transparent !important;
+}

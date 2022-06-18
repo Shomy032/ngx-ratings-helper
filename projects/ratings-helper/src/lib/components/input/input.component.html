@@ -1,0 +1,10 @@
+<div class="stars-input" [class]="customClass">
+    <div *ngFor="let index of starList">
+      <ngx-rating-star
+      [disabled]="disabled"
+      [size]="size"
+      [value]="singleStarValue(index)"
+      (click)="onStarClick(index)"
+      ></ngx-rating-star>
+    </div>
+</div>

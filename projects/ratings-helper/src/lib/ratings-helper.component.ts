@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ratings-helper',
+  selector: 'ngx-rating-helper',
   template: `
     <p>
       ratings-helper works!

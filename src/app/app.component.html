@@ -1,2 +1,10 @@
-<NgxMat-test-comp></NgxMat-test-comp>
-<NgxMat-test-comp-sec></NgxMat-test-comp-sec>
+<div class="navigation">
+    <button [ngClass]="{'nav-active' : navIndex === 0}" mat-button color="primary" class="navigation-btn"
+    (click)="navigate(0)">Rating</button>
+    <button [ngClass]="{'nav-active' : navIndex === 1}" mat-button color="primary" class="navigation-btn"
+    (click)="navigate(1)">Random</button>
+</div>
+
+<div class="page">
+<app-rating-tests *ngIf="navIndex === 0"></app-rating-tests>
+</div>

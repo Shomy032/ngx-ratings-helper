@@ -1,0 +1,29 @@
+h1{
+    font-size: 20px;
+}
+
+.navigation{
+    z-index: 999;
+
+    width: 100vw;
+    height: 60px;
+    padding: 0 15rem;
+    background-color: white;
+    border-bottom: 1px solid var(--primary-color);
+    position: sticky;
+    top: 0;
+    margin-bottom: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navigation-btn{
+    margin: 0 0.4rem;
+}
+
+.nav-active{
+    border-bottom: 1px solid var(--primary-color);
+    border-radius: 0;
+}
