@@ -1,6 +1,16 @@
 {
   "name": "ratings-helper",
   "version": "0.0.1",
+  "keywords" : ["angular", "material", "rating", "star", "rating-stars", "rating-input", "rating-form", "ratings-star", "ratings-input", "ratings-form"],
+  "description": "Package for Angular app, with all essential components for ratings, like stars and inputs.",
+  "license" : "MIT",
+ "bugs": {
+    "url" : "https://github.com/Shomy032/ngx-ratings-helper/issues",
+    "email" : "milosmilic032@gmail.com"
+  },
+  "homepage": "https://github.com/Shomy032/ngx-ratings-helper#readme",
+  "contributors" : ["Milos Milic"],
+  "author": "Milos Milic",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0"
