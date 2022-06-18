@@ -8,7 +8,13 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "build-lib": "ng build NgxHelperLib"
+    "build-test-lib": "ng build NgxHelperLib",
+    "build-rating": "ng build ratings-helper",
+    "build-lib": "ng build ratings-helper",
+    "lint-rating": "ng lint ratings-helper",
+    "lint-lib": "ng lint ratings-helper",
+    "build-prod": "ng build ratings-helper --configuration production",
+    "build-dev": "ng build ratings-helper --configuration development"
   },
   "private": true,
   "dependencies": {
