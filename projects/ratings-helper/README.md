@@ -1,24 +1,38 @@
 # RatingsHelper
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+Package for Angular app, with all essential components for ratings, like stars and inputs.
+
+## Developer Quick Start
+
+after cloning repo, first install all needed dependencies :
+
+    npm i
+
+then build library in watch mode ( building every time when detect changes )
+
+this is needed to apply new changes to dev envirement :
+
+    npm run build-libw
+
+after that is finished in NEW terminal serve dev envirement for testing
+
+    npm run start
+
+now you are redy to go :)
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project ratings-helper` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ratings-helper`.
-> Note: Don't forget to add `--project ratings-helper` or else it will be added to the default project in your `angular.json` file. 
+Run `npm run clib -- --name=${YOUR_NAME_HERE}` to generate a new component. 
 
 ## Build
 
-Run `ng build ratings-helper` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build-lib` to build library code. 
 
-## Publishing
+## Running unit tests and Liting
 
-After building your library with `ng build ratings-helper`, go to the dist folder `cd dist/ratings-helper` and run `npm publish`.
+Run `npm run lint-lib` to lint library code, and check for potential errors. 
 
-## Running unit tests
+Run `npm run test-lib` to run all library tests. 
 
-Run `ng test ratings-helper` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Please do this step before you start working and after you done, becuse this is needed to pass in orders to merge new changes in project.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
