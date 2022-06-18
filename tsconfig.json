@@ -2,6 +2,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "NgxHelperLib": [
+        "dist/ngx-helper-lib"
+      ],
+      "ratings-helper": [
+        "dist/ratings-helper"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

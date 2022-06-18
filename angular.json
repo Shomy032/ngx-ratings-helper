@@ -2,6 +2,9 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  },
   "projects": {
     "ngx-lib-1.0.0": {
       "projectType": "application",
@@ -99,6 +102,85 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "NgxHelperLib": {
+      "projectType": "library",
+      "root": "projects/ngx-helper-lib",
+      "sourceRoot": "projects/ngx-helper-lib/src",
+      "prefix": "NgxMat",
+      "architect": {
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "/public-api.ts"
+            ]
+          }
+        },
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-helper-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-helper-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-helper-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-helper-lib/src/test.ts",
+            "tsConfig": "projects/ngx-helper-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-helper-lib/karma.conf.js"
+          }
+        }
+      }
+    },
+    "ratings-helper": {
+      "projectType": "library",
+      "root": "projects/ratings-helper",
+      "sourceRoot": "projects/ratings-helper/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ratings-helper/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ratings-helper/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ratings-helper/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ratings-helper/src/test.ts",
+            "tsConfig": "projects/ratings-helper/tsconfig.spec.json",
+            "karmaConfig": "projects/ratings-helper/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ratings-helper/**/*.ts",
+              "projects/ratings-helper/**/*.html"
+            ]
           }
         }
       }
