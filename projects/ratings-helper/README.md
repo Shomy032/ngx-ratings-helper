@@ -4,11 +4,11 @@ Package for Angular app, with all essential components for ratings, like stars a
 
 ## Demo Exaples
 
-https://ngx-lib-demo-examples.web.app/
 
 [Try Our Components Yourself](https://ngx-lib-demo-examples.web.app/)
 
-[Rating Exaples Picture](../assets/star-inputs-example.png)
+https://ngx-lib-demo-examples.web.app/
+
 
 ### Dev Quick Start
 
