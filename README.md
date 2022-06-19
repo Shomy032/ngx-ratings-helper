@@ -2,6 +2,8 @@
 
 Package for Angular app, with all essential components for ratings, like stars and inputs.
 
+[Visit NPM register](https://www.npmjs.com/package/ngx-ratings-helper)
+
 ## Developer Quick Start
 
 after cloning repo, first install all needed dependencies :
