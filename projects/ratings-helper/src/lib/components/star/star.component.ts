@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'ngx-rating-star',
   templateUrl: './star.component.html',
-  styleUrls: ['./star.component.css']
+  styleUrls: ['./star.component.scss']
 })
 export class StarComponent implements OnInit {
 
@@ -23,7 +23,8 @@ export class StarComponent implements OnInit {
   @Input() size: number = 28;
   @Input() colorActive: string = "yellow";
   @Input() colorInactive: string = "gray";
-  @Input() borderColor: string = "black";
+  @Input() borderColor: string = "gray";
+  @Input() disableBorder: boolean = false;
   @Input() disabled: boolean = false;
 
   constructor() { }

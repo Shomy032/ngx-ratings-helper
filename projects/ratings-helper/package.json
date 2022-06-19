@@ -9,6 +9,10 @@
     "email" : "milosmilic032@gmail.com"
   },
   "homepage": "https://github.com/Shomy032/ngx-ratings-helper#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shomy032/ngx-ratings-helper"
+  },
   "contributors" : ["Milos Milic"],
   "author": "Milos Milic",
   "peerDependencies": {

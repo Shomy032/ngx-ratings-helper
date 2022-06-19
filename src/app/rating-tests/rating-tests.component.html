@@ -122,6 +122,22 @@
         <button (click)="isDisabled6 = !isDisabled6"
         >{{ isDisabled6 ? 'Enable' : 'Disable' }}</button>
 
+        <h1 class="app-title">Stars input without border</h1>
+        <ngx-rating-input
+        ngDefaultControl
+        [max]="5"
+        [min]="0"
+        [disableBorder]="isborderDisabled7"
+        [disabled]="false" 
+        customClass="my-class"
+        [formControl]="ratingControl7">
+        </ngx-rating-input>
+
+        <button (click)="isborderDisabled7 = !isborderDisabled7"
+        >{{ isborderDisabled7 ? 'Enable' : 'Disable' }} Border</button>
+
+        <br>
+
 
         <h1 class="app-title">Stars input disabled (full):</h1>
         <ngx-rating-input

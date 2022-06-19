@@ -22,6 +22,9 @@ export class RatingTestsComponent  {
   ratingControl4 = new FormControl(4);
   ratingControl5 = new FormControl(3);
   ratingControl6 = new FormControl(3);
+  ratingControl7 = new FormControl(3);  
+
+  isborderDisabled7 = true;
 
   handleValueChanges(event : number){
   }

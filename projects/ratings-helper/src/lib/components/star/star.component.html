@@ -1,8 +1,14 @@
-<div class="single-star"
-[style.cursor]="disabled ? 'default' : 'pointer'"
-[style.opacity]="disabled ? '0.55' : '1'"
-[ngStyle]="{'background': gradientValue ,
-'font-size' : size + 'px' ,
-'user-select': 'none'
-}"
->★</div>
+
+    <div class="single-star"
+    [style.cursor]="disabled ? 'default' : 'pointer'"
+    [style.opacity]="disabled ? '0.55' : '1'"
+    [ngStyle]="{'background': gradientValue ,
+    'font-size' : size + 'px' ,
+    'user-select': 'none'
+    }"
+    [ngClass]="{'disable-border' : disableBorder}"
+    >★</div>
+
+
+
+
