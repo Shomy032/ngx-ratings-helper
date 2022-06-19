@@ -4,7 +4,7 @@ import { FormControl } from '@angular/forms';
 @Component({
   selector: 'ngx-rating-input',
   templateUrl: './input.component.html',
-  styleUrls: ['./input.component.css']
+  styleUrls: ['./input.component.scss']
 })
 export class InputComponent implements OnInit {
 
@@ -29,7 +29,8 @@ export class InputComponent implements OnInit {
   @Input() formControl: FormControl | null = null;
   @Input() colorActive: string = "yellow";
   @Input() colorInactive: string = "gray";
-  @Input() borderColor: string = "black";
+  @Input() borderColor: string = "gray";
+  @Input() disableBorder: boolean = false;
 
   @Output() valueChanges: EventEmitter<number> = new EventEmitter();
 

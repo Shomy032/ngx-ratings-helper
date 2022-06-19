@@ -111,6 +111,11 @@
     "NgxHelperLib": {
       "projectType": "library",
       "root": "projects/ngx-helper-lib",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "sourceRoot": "projects/ngx-helper-lib/src",
       "prefix": "NgxMat",
       "architect": {

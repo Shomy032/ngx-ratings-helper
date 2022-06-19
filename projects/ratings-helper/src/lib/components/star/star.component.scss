@@ -1,0 +1,15 @@
+
+
+    $border-color: gray;
+
+    .single-star{
+        background-clip: text !important;
+       -webkit-background-clip: text !important;
+       -webkit-text-fill-color: transparent !important;
+       -webkit-text-stroke: 1px $border-color;
+    }
+
+
+    .disable-border{
+        -webkit-text-stroke: 1px transparent;
+    }
