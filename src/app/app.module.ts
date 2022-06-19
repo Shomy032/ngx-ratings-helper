@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-// import { NgxHelperLibModule } from 'NgxHelperLib';
 import { RatingsHelperModule } from 'ratings-helper';
 import { AppComponent } from './app.component';
 import { RatingTestsComponent } from './rating-tests/rating-tests.component';
@@ -19,7 +18,6 @@ const MATERIAL_MODULES = [
   ],
   imports: [
     BrowserModule,
-    // NgxHelperLibModule,
     RatingsHelperModule,
     FormsModule,
     ReactiveFormsModule,
