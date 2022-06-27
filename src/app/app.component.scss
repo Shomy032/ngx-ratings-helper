@@ -3,6 +3,7 @@ h1{
 }
 
 .navigation{
+    position: relative;
     z-index: 999;
 
     width: 100vw;
@@ -26,4 +27,11 @@ h1{
 .nav-active{
     border-bottom: 1px solid var(--primary-color);
     border-radius: 0;
+}
+
+.nav-title{
+    position: absolute;
+    top: 50%;
+    left: 10rem;
+    transform: translate(-50%, -50%);
 }

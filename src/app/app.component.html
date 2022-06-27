@@ -1,10 +1,15 @@
-<div class="navigation">
-    <button [ngClass]="{'nav-active' : navIndex === 0}" mat-button color="primary" class="navigation-btn"
-    (click)="navigate(0)">Rating</button>
-    <button [ngClass]="{'nav-active' : navIndex === 1}" mat-button color="primary" class="navigation-btn"
-    (click)="navigate(1)">Random</button>
-</div>
+<ng-container *ngIf="navPageIndex$ | async as index">
+    <div class="navigation">
+        <button [ngClass]="{'nav-active' : index === 1}" mat-button color="primary" class="navigation-btn"
+        (click)="navigate(1)">Rating</button>
+        <button [ngClass]="{'nav-active' : index === 2}" mat-button color="primary" class="navigation-btn"
+        (click)="navigate(2)">State Testing</button>
+    </div>
+    
+    <div class="page">
+    <app-rating-tests *ngIf="index === 1"></app-rating-tests>
+    <app-state-test *ngIf="index === 2"></app-state-test>
+    </div>
+</ng-container>
 
-<div class="page">
-<app-rating-tests *ngIf="navIndex === 0"></app-rating-tests>
-</div>
+
